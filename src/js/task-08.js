@@ -11,15 +11,15 @@ function onSubmitForm(event) {
 
   if (email === '' || password === '') {
     alert('Потрібно заповнити всі поля форми');
+  } else {
+    const newEmail = email;
+    const newPassword = password;
+
+    const formData = {
+      newEmail,
+      newPassword,
+    };
+    console.log(formData);
+    event.currentTarget.reset();
   }
-
-  const formData = {
-    email,
-    password,
-  };
-
-  // const formData = new FormData(event.currentTarget);
-  console.log(formData);
-
-  event.currentTarget.reset();
 }

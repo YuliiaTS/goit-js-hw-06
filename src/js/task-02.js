@@ -7,7 +7,7 @@ const ingredients = [
   "Condiments",
 ];
 
-const makeItems = ingredients.map(ingredient => {
+const items = ingredients.map(ingredient => {
   const itemEl = document.createElement('li');
   itemEl.textContent = ingredient;
   itemEl.classList.add('item');
